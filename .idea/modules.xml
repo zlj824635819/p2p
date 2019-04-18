@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:/动力节点/第六阶段/24-IDEA-p2p 1.3/HttpClient/HttpClient.iml" filepath="F:/动力节点/第六阶段/24-IDEA-p2p 1.3/HttpClient/HttpClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-common/p2p-common.iml" filepath="$PROJECT_DIR$/p2p-common/p2p-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-dataservice/p2p-dataservice.iml" filepath="$PROJECT_DIR$/p2p-dataservice/p2p-dataservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-exterface/p2p-exterface.iml" filepath="$PROJECT_DIR$/p2p-exterface/p2p-exterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-mybatisGenerator/p2p-mybatisGenerator.iml" filepath="$PROJECT_DIR$/p2p-mybatisGenerator/p2p-mybatisGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-parent/p2p-parent.iml" filepath="$PROJECT_DIR$/p2p-parent/p2p-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-pay/p2p-pay.iml" filepath="$PROJECT_DIR$/p2p-pay/p2p-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../p2p-timer/p2p-timer.iml" filepath="$PROJECT_DIR$/../p2p-timer/p2p-timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p2p-web/p2p-web.iml" filepath="$PROJECT_DIR$/p2p-web/p2p-web.iml" />
+    </modules>
+  </component>
+</project>

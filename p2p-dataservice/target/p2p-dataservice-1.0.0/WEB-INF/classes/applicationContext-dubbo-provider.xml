@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 服务提供者：应用名称 -->
+    <dubbo:application name="dataservice"/>
+
+    <!-- 配置 zookeeper 注册中心 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.77.128:2181"/>
+
+    <!--产品业务-->
+   <dubbo:service interface="com.bjpowernode.p2p.service.loan.LoanInfoService" ref="loanInfoServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
+    <!--用户业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.user.UserService" ref="userServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
+    <!--投资业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.loan.BidInfoService" ref="bidInfoServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
+    <!--账户业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.user.FinanceAccountService" ref="financeAccountServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
+    <!--redis业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.loan.RedisService" version="1.0.0" ref="redisServiceImpl" timeout="15000"></dubbo:service>
+
+    <!--收益业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.loan.IncomeRecordService" ref="incomeRecordServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
+    <!--充值业务-->
+    <dubbo:service interface="com.bjpowernode.p2p.service.loan.RechargeRecordService" ref="rechargeRecordServerImpl" version="1.0.0" timeout="15000"></dubbo:service>
+</beans>
